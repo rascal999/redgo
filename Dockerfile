@@ -16,7 +16,9 @@ RUN go install -v github.com/utkusen/urlhunter@latest
 RUN go install -v github.com/tomnomnom/qsreplace@latest
 RUN go install -v github.com/hahwul/jwt-hack@latest
 RUN go install -v github.com/dhn/spk@latest
-RUN go install github.com/sw33tLie/sns@latest
+RUN go install -v github.com/sw33tLie/sns@latest
+RUN go install -v github.com/tomnomnom/qsreplace@latest
+RUN go install -v github.com/tomnomnom/gf@latest
 RUN mkdir git && cd git && git clone https://github.com/redhuntlabs/HTTPLoot.git && cd HTTPLoot && go build
 
 RUN pip3 install holehe
