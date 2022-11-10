@@ -19,6 +19,7 @@ RUN go install -v github.com/dhn/spk@latest
 RUN go install -v github.com/sw33tLie/sns@latest
 RUN go install -v github.com/tomnomnom/qsreplace@latest
 RUN go install -v github.com/tomnomnom/gf@latest
+RUN go install -v github.com/projectdiscovery/katana/cmd/katana@latest
 RUN mkdir git && cd git && git clone https://github.com/redhuntlabs/HTTPLoot.git && cd HTTPLoot && go build
 
 RUN pip3 install holehe
