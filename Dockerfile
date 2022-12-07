@@ -22,6 +22,7 @@ RUN go install -v github.com/tomnomnom/gf@latest
 RUN go install -v github.com/projectdiscovery/katana/cmd/katana@latest
 RUN go install -v github.com/aquasecurity/tfsec/cmd/tfsec@latest
 RUN go install -v github.com/hahwul/dalfox/v2@latest
+RUN go install -v github.com/tomnomnom/assetfinder@latest
 
 RUN go install -v github.com/tomnomnom/waybackurls@latest
 RUN go install -v github.com/tomnomnom/gf@latest
@@ -41,3 +42,4 @@ RUN pip3 install onionsearch
 RUN pip3 install ignorant
 RUN pip3 install one-lin3r
 RUN pip3 install pywhat
+RUN pip3 install coercer
