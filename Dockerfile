@@ -21,6 +21,7 @@ RUN go install -v github.com/tomnomnom/qsreplace@latest
 RUN go install -v github.com/tomnomnom/gf@latest
 RUN go install -v github.com/projectdiscovery/katana/cmd/katana@latest
 RUN go install -v github.com/aquasecurity/tfsec/cmd/tfsec@latest
+RUN go install -v github.com/hahwul/dalfox/v2@latest
 
 RUN mkdir git && cd git && git clone https://github.com/redhuntlabs/HTTPLoot.git && cd HTTPLoot && go build
 
