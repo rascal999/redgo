@@ -25,6 +25,7 @@ RUN go install -v github.com/aquasecurity/tfsec/cmd/tfsec@latest
 RUN mkdir git && cd git && git clone https://github.com/redhuntlabs/HTTPLoot.git && cd HTTPLoot && go build
 
 RUN git clone https://www.github.com/thenurhabib/collector && cd collector && pip install -r requirements.txt
+RUN git clone https://github.com/ticarpi/jwt_tool && cd jwt_tool && pip install termcolor cprint pycryptodomex requests
 
 RUN pip3 install holehe
 RUN pip3 install onionsearch
