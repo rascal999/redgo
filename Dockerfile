@@ -44,3 +44,4 @@ RUN pip3 install one-lin3r
 RUN pip3 install pywhat
 RUN pip3 install coercer
 RUN pip3 install crosslinked
+RUN pip3 install orbitaldump
