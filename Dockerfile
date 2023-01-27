@@ -8,6 +8,9 @@ RUN apt-get -y install python3
 RUN apt-get -y install python3-setuptools
 RUN apt-get -y install python3-pip
 
+# For XSSRocket
+RUN apt-get -y install ruby
+
 RUN go install -v github.com/ndelphit/apkurlgrep@latest
 RUN go install -v github.com/musana/fuzzuli@latest
 RUN go install -v github.com/j3ssie/metabigor@latest
@@ -36,6 +39,11 @@ RUN git clone https://www.github.com/thenurhabib/collector && cd collector && pi
 RUN git clone https://github.com/ticarpi/jwt_tool && cd jwt_tool && pip install termcolor cprint pycryptodomex requests
 RUN git clone https://github.com/BishopFox/cloudfox.git && cd ./cloudfox && go build .
 RUN git clone https://github.com/MrH0wl/Cloudmare.git && pip install backoff
+RUN git clone https://github.com/blackhatethicalhacking/XSSRocket.git && cd XSSRocket && chmod +x XSSRocket.sh
+
+# For XSSRocket
+RUN apt-get -y install figlet
+RUN gem install lolcat
 
 RUN pip3 install holehe
 RUN pip3 install onionsearch
