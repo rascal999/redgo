@@ -2,11 +2,9 @@ FROM golang
 
 WORKDIR /root
 
-# pip yo
+# python and pip
 RUN apt-get update
-RUN apt-get -y install python3
-RUN apt-get -y install python3-setuptools
-RUN apt-get -y install python3-pip
+RUN apt-get -y install python3 python3-setuptools python3-pip python3-venv
 
 # For XSSRocket
 RUN apt-get -y install ruby
@@ -53,3 +51,7 @@ RUN pip3 install pywhat
 RUN pip3 install coercer
 RUN pip3 install crosslinked
 RUN pip3 install orbitaldump
+RUN pip3 install pipx
+
+# msprobe
+RUN pipx install git+https://github.com/puzzlepeaches/msprobe.git
