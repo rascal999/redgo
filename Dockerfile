@@ -52,6 +52,7 @@ RUN pip3 install coercer
 RUN pip3 install crosslinked
 RUN pip3 install orbitaldump
 RUN pip3 install pipx
+RUN pip3 install git-dumper
 
 # msprobe
 RUN pipx install git+https://github.com/puzzlepeaches/msprobe.git
