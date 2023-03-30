@@ -38,6 +38,7 @@ RUN git clone https://github.com/ticarpi/jwt_tool && cd jwt_tool && pip install 
 RUN git clone https://github.com/BishopFox/cloudfox.git && cd ./cloudfox && go build .
 RUN git clone https://github.com/MrH0wl/Cloudmare.git && pip install backoff
 RUN git clone https://github.com/blackhatethicalhacking/XSSRocket.git && cd XSSRocket && chmod +x XSSRocket.sh
+RUN git clone https://github.com/andresriancho/enumerate-iam.git && cd enumerate-iam && pip install -r requirements.txt
 
 # For XSSRocket
 RUN apt-get -y install figlet
@@ -53,6 +54,7 @@ RUN pip3 install crosslinked
 RUN pip3 install orbitaldump
 RUN pip3 install pipx
 RUN pip3 install git-dumper
+RUN pip3 install aws-consoler
 
 # msprobe
 RUN pipx install git+https://github.com/puzzlepeaches/msprobe.git
