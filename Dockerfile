@@ -55,6 +55,7 @@ RUN pip3 install orbitaldump
 RUN pip3 install pipx
 RUN pip3 install git-dumper
 RUN pip3 install aws-consoler
+RUN pip3 install tapo
 
 # msprobe
 RUN pipx install git+https://github.com/puzzlepeaches/msprobe.git
