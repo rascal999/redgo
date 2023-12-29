@@ -1,6 +1,8 @@
 FROM golang
 
 WORKDIR /root
+# Office fan
+COPY tapo_fan_toggle.py /root/tapo_fan_toggle.py
 
 # python and pip
 RUN apt-get update
