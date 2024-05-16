@@ -35,6 +35,8 @@ RUN git clone https://github.com/1ndianl33t/Gf-Patterns && mv /root/Gf-Patterns/
 
 RUN mkdir git && cd git && git clone https://github.com/redhuntlabs/HTTPLoot.git && cd HTTPLoot && go build
 
+RUN rm /usr/lib/python3.11/EXTERNALLY-MANAGED
+
 RUN git clone https://www.github.com/thenurhabib/collector && cd collector && pip install -r requirements.txt
 RUN git clone https://github.com/ticarpi/jwt_tool && cd jwt_tool && pip install termcolor cprint pycryptodomex requests
 RUN git clone https://github.com/BishopFox/cloudfox.git && cd ./cloudfox && go build .
