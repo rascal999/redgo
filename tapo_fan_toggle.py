@@ -6,8 +6,7 @@ import os
 import sys
 from datetime import datetime
 
-from tapo import ApiClient, EnergyDataInterval
-
+from tapo import ApiClient
 
 async def main():
     tapo_username = os.getenv("TAPO_USERNAME")
